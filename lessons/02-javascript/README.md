@@ -157,7 +157,7 @@ for (var key in object) {
 }
 ```
 
-Note that the order of iteration is not guaranteed with this syntax. Later, if you use libraries which modify the prototype (more on this later) of base types, can may encounter strange behaviors where you iterate over functions in addition to the elements of the object you expect. These behaviors can be avoided using following syntax:
+Note that the order of iteration is not guaranteed with this syntax. If you use libraries which modify the prototype (more on this later) of base types, you may encounter strange behaviors where you iterate over functions in addition to the elements of the object you expect. These behaviors can be avoided using following syntax:
 
 ```node
 array.forEach(function(element) {
